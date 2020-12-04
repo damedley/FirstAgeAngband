@@ -1645,8 +1645,8 @@ effect:MOVE_ATTACK
 dice:1+$B
 expr:B:PLAYER_LEVEL:+ 10 / 15
 desc:You may run up to 4 spaces towards targeted enemy, then perform a
-desc: level-dependent number of melee blows. The number of blows starts at 1
-desc: and goes up every 15 levels (2 blows at 20, etc.). If you moved, the
+desc: level-dependent number of melee blows. The number of blows starts at 2
+desc: and goes up every 15 levels (3 blows at 20, etc.). If you moved, the
 desc: number of blows is reduced by 25% for each space, then rounded.
 
 spell:Shatter Stone:7:3:20:8
@@ -1657,9 +1657,9 @@ desc: wall.  Deals 20+1d30 damage to monsters vulnerable to rock remover.
 
 spell:Whirlwind Attack:10:5:30:10
 effect:SWEEP
-dice:$S
+dice:1+$S
 expr:S:PLAYER_LEVEL:+ 5 / 15
-desc:Deals a melee blow to each adjacent enemy. You gain an additional blow
+desc:Deals 2 melee blows to each adjacent enemy. You gain an additional blow
 desc: at levels 25 and 40.
 
 spell:Grim Purpose:13:8:30:12
@@ -1677,8 +1677,8 @@ effect:MELEE_BLOWS:MON_STUN:3
 dice:1+$S
 expr:S:PLAYER_LEVEL:/ 15
 desc:Attempts a level-dependent number of melee blows against the targeted
-desc: monster.  You get 1 blow for every 15 levels.  Each blow that hits stuns
-desc: the enemy for 3 turns.
+desc: monster.  You get 2 blows plus 1 for every 15 levels.  Each blow
+desc: that hits stuns the enemy for 3 turns.
 
 spell:Howl of the Damned:18:8:30:16
 effect:PROJECT_LOS:TURN_ALL
